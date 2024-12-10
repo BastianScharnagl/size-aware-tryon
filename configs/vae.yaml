@@ -1,0 +1,26 @@
+model:
+  base_learning_rate: 4.5e-6
+  class_path: model.ldm.models.autoencoder.AutoencoderKL
+  init_args:
+    learning_rate: 4.5e-6
+    monitor: "val/rec_loss"
+    embed_dim: 4
+    image_key: "fashion_image_stock"
+    lossconfig:
+      target: model.ldm.modules.losses.LPIPSWithDiscriminator
+      params:
+        disc_start: 50001
+        kl_weight: 0.000001
+        disc_weight: 0.5
+
+    ddconfig:
+      double_z: True
+      z_channels: 4
+      resolution: 256
+      in_channels: 3
+      out_ch: 3
+      ch: 128
+      ch_mult: [ 1,2,4,4 ]  # num_down = len(ch_mult)-1
+      num_res_blocks: 2
+      attn_resolutions: [ ]
+      dropout: 0.0

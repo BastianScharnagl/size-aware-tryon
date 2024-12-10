@@ -1,0 +1,62 @@
+model:
+  class_path: model.cldm.cldm.ControlLDM
+  init_args:
+    linear_start: 0.00085
+    linear_end: 0.0120
+    num_timesteps_cond: 1
+    log_every_t: 200
+    timesteps: 1000
+    first_stage_key: "human_image"
+    cond_stage_key: "txt"
+    control_key: "keypoints_vis"
+    image_size: 64
+    channels: 4
+    cond_stage_trainable: false
+    conditioning_key: crossattn
+    monitor: val/loss_simple_ema
+    scale_factor: 0.18215
+    use_ema: False
+    only_mid_control: False
+    sd_locked: True
+    learning_rate: 1.0e-05
+    
+    control_stage_config:
+      class_path: model.cldm.cldm.ControlNet
+      init_args:
+        image_size: 32 # unused
+        in_channels: 4
+        hint_channels: 3
+        model_channels: 320
+        attention_resolutions: [ 4, 2, 1 ]
+        num_res_blocks: 2
+        channel_mult: [ 1, 2, 4, 4 ]
+        num_heads: 8
+        use_spatial_transformer: True
+        transformer_depth: 1
+        context_dim: 768
+        use_checkpoint: True
+        legacy: False
+
+    unet_config:
+      class_path: model.cldm.cldm.ControlledUnetModel
+      init_args:
+        image_size: 32 # unused
+        in_channels: 4
+        out_channels: 4
+        model_channels: 320
+        attention_resolutions: [ 4, 2, 1 ]
+        num_res_blocks: 2
+        channel_mult: [ 1, 2, 4, 4 ]
+        num_heads: 8
+        use_spatial_transformer: True
+        transformer_depth: 1
+        context_dim: 768
+        use_checkpoint: True
+        legacy: False
+
+    first_stage_config:
+      config_path: configs/vae.yaml
+      checkpoint: checkpoints/vae-ft-mse-840000-ema-pruned.ckpt
+
+    cond_stage_config:
+      class_path: model.ldm.modules.encoders.modules.FrozenCLIPEmbedder
