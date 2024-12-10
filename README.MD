@@ -7,7 +7,7 @@
 Load the original VAE from [Huggingface](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/blob/main/vae-ft-mse-840000-ema-pruned.ckpt) and place it in checkpoints folder.
 Load our trained checkpoint from [Huggingface](https://huggingface.co/BastianScharnagl/size-aware-tryon) and place it in checkpoints folder.
 
-With inference.ipynb you can process the images from the sample_images folder.
+With inference.ipynb you can process the images from the sample_images folder. You can change the prompt for customized results.
 For your own images, you have to preprocess it and get the Human Keypoints with [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose), the Fashion Keypoints with [KGDet](https://github.com/ShenhanQian/KGDet) and the cloth-agnostic-mask with [this script](https://github.com/bastianscharnagl/size-aware-tryon/tools/get_agnostic_mask.py).
 
 
