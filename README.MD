@@ -1,7 +1,5 @@
 **Towards a size-aware implicit 2-D cloth rendering**
-
 *Bastian Scharnagl, Christian Groth*
-
 *7th IEEE International Conference on Artificial Intelligence & eXtended and Virtual Reality (AIxVR 2025)*
 
 ![3799_header.jpg](https://github.com/bastianscharnagl/size-aware-tryon/assets/3799_header.jpg)
