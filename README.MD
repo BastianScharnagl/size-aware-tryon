@@ -15,26 +15,19 @@ Sample images with prompt "model posing in blue jeans trousers".
 
 <div>
 <p float="left">
-  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_cfg_scale_9.00_-30.jpg" width="100" />
-  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_cfg_scale_9.00_0.0.jpg" width="100" />
-  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_cfg_scale_9.00_30.jpg" width="100" />
+  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_cfg_scale_9.00_-30.jpg" width="250" />
+  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_cfg_scale_9.00_0.0.jpg" width="250" />
+  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_cfg_scale_9.00_30.jpg" width="250" />
 </p>
 </div>
 
 Sample inpainting images.
-<div>
-<p float="left">
-  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_cfg_scale_9.00_-30.jpg" width="100" />
-  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_cfg_scale_9.00_0.0.jpg" width="100" />
-  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_cfg_scale_9.00_30.jpg" width="100" />
-</p>
-</div>
 
 <div>
 <p float="left">
-  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_inpainting_-30.jpg" width="100" />
-  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_inpainting_0.0.jpg" width="100" />
-  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_inpainting_30.jpg" width="100" />
+  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_inpainting_-30.jpg" width="250" />
+  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_inpainting_0.0.jpg" width="250" />
+  <img src="https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/013582_samples_inpainting_30.jpg" width="250" />
 </p>
 </div>
 
