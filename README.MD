@@ -2,7 +2,7 @@
 *Bastian Scharnagl, Christian Groth*
 *7th IEEE International Conference on Artificial Intelligence & eXtended and Virtual Reality (AIxVR 2025)*
 
-![3799_header.jpg](https://github.com/bastianscharnagl/size-aware-tryon/assets/3799_header.jpg)
+![3799_header.jpg](https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/3799_header.jpg)
 
 Load the original VAE from [Huggingface](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/blob/main/vae-ft-mse-840000-ema-pruned.ckpt) and place it in checkpoints folder.
 Load our trained checkpoint from [Huggingface](https://huggingface.co/BastianScharnagl/size-aware-tryon) and place it in checkpoints folder.
