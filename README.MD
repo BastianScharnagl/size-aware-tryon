@@ -5,6 +5,8 @@ Bastian Scharnagl, Christian Groth\
 
 ![3799_header.jpg](https://github.com/BastianScharnagl/size-aware-tryon/blob/main/assets/3799_header.jpg)
 
+Repo to create Model images with human and fashion keypoints.
+
 Load the original VAE from [Huggingface](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/blob/main/vae-ft-mse-840000-ema-pruned.ckpt) and place it in checkpoints folder.\
 Load our trained checkpoint from [Huggingface](https://huggingface.co/BastianScharnagl/size-aware-tryon) and place it in checkpoints folder.
 
